@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>סימונה השכרת יאכטות הרצליה — הפלגה פרטית לכל אירוע</title>
+  <meta name="description" content="הפלגה פרטית על יאכטה סימונה במרינה הרצליה. שייט רומנטי, יום הולדת, הצעת נישואין, מסיבת רווקות ועוד. מחירים מ-690 ₪. 341 ביקורות 4.9 בגוגל." />
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_PLACEHOLDER');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_PLACEHOLDER&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       CSS VARIABLES — SEAMONA BRAND
+    ============================================================ */
+    :root {
+      --primary:        #0a3d62;
+      --primary-light:  #1a6ea8;
+      --primary-dark:   #062a45;
+      --accent:         #f0a500;
+      --accent-light:   #f7c240;
+      --accent-dark:    #c47f00;
+      --bg-light:       #f8fafd;
+      --bg-dark:        #061e33;
+      --text-main:      #0d1b2a;
+      --text-muted:     #5a7184;
+      --white:          #ffffff;
+      --radius-sm:      8px;
+      --radius-md:      14px;
+      --radius-lg:      22px;
+      --shadow-sm:      0 2px 12px rgba(10,61,98,0.08);
+      --shadow-md:      0 6px 28px rgba(10,61,98,0.14);
+      --shadow-lg:      0 12px 48px rgba(10,61,98,0.20);
+      --transition:     0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Heebo', Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-main);
+      background: var(--white);
+      direction: rtl;
+      text-align: right;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: 0 auto;
+    }
+
+    /* ============================================================
+       SCROLL ANIMATION
+    ============================================================ */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--primary-dark);
+      padding: 0 24px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    }
+    .header-logo img {
+      height: 38px;
+      width: auto;
+    }
+    .header-logo-text {
+      color: var(--white);
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .header-phone {
+      color: var(--accent-light);
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .header-phone svg { width: 16px; height: 16px; fill: var(--accent-light); }
+    .btn-header {
+      background: var(--accent);
+      color: var(--primary-dark);
+      padding: 8px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .btn-header:hover { background: var(--accent-light); transform: translateY(-2px); }
+    @media (max-width: 640px) {
+      .btn-header { display: none; }
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #0d5286 100%);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://www.seamona.co.il/wp-content/uploads/2021/12/סימונה-השכרת-יאכטה-בהרצליה-1@2x.png') center/cover no-repeat;
+      opacity: 0.12;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(240,165,0,0.18);
+      border: 1.5px solid var(--accent);
+      color: var(--accent-light);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+      animation: fadeInDown 0.6s ease forwards;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 20px;
+      animation: fadeInUp 0.65s ease 0.1s both;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.22rem);
+      color: rgba(255,255,255,0.82);
+      max-width: 600px;
+      margin: 0 auto 32px;
+      animation: fadeInUp 0.65s ease 0.2s both;
+    }
+    .btn-hero {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 16px 42px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 24px rgba(240,165,0,0.45);
+      animation: fadeInUp 0.65s ease 0.3s both, pulseCta 2.4s ease-in-out 1.2s infinite;
+      transition: var(--transition);
+    }
+    .btn-hero:hover {
+      background: var(--accent-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(240,165,0,0.55);
+    }
+    .hero-trust {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 28px;
+      animation: fadeInUp 0.65s ease 0.4s both;
+    }
+    .hero-trust-item {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hero-trust-item::before {
+      content: '✓';
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    @keyframes fadeInDown { from { opacity:0; transform:translateY(-16px);} to { opacity:1; transform:translateY(0);} }
+    @keyframes fadeInUp   { from { opacity:0; transform:translateY(20px);} to { opacity:1; transform:translateY(0);} }
+    @keyframes pulseCta {
+      0%,100% { box-shadow: 0 4px 24px rgba(240,165,0,0.45); }
+      50%      { box-shadow: 0 4px 40px rgba(240,165,0,0.75); }
+    }
+
+    /* ============================================================
+       OCCASION BAR
+    ============================================================ */
+    .occasion-bar {
+      background: var(--white);
+      padding: 42px 0 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .occasion-bar h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 28px;
+    }
+    .occasion-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 640px) {
+      .occasion-grid { grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    }
+    .occasion-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-light);
+      border: 2px solid transparent;
+      border-radius: var(--radius-md);
+      padding: 18px 8px 14px;
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+    }
+    .occasion-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .occasion-icon { font-size: 1.9rem; }
+    .occasion-label { font-size: 0.82rem; font-weight: 600; color: var(--primary); }
+
+    /* ============================================================
+       SOCIAL PROOF STRIP
+    ============================================================ */
+    .proof-strip {
+      background: var(--primary);
+      padding: 22px 0;
+    }
+    .proof-strip-inner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 36px;
+    }
+    .proof-strip-item {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .proof-strip-num {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--accent-light);
+    }
+
+    /* ============================================================
+       PAIN BANNER
+    ============================================================ */
+    .pain-banner {
+      background: var(--bg-light);
+      border-right: 5px solid var(--accent);
+      padding: 26px 28px;
+      margin: 0;
+    }
+    .pain-banner-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .pain-banner-dot {
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: dotPulse 1.8s ease-in-out infinite;
+    }
+    @keyframes dotPulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:0.5; transform:scale(0.75); }
+    }
+    .pain-banner p {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* ============================================================
+       PAIN CARDS
+    ============================================================ */
+    .pain-section {
+      background: var(--bg-light);
+      padding: 60px 0;
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 640px) { .pain-grid { grid-template-columns: 1fr; } }
+    .pain-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-sm);
+      border-top: 3px solid var(--accent);
+    }
+    .pain-num {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .pain-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .pain-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       SOLUTION
+    ============================================================ */
+    .solution {
+      background: var(--bg-dark);
+      padding: 80px 0;
+      color: var(--white);
+    }
+    .solution-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .solution-inner { grid-template-columns: 1fr; gap: 36px; } }
+    .solution h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 22px;
+      line-height: 1.3;
+    }
+    .solution h2 span { color: var(--accent); }
+    .solution p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+    .solution-img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .solution-img img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+    .solution-img-placeholder {
+      width: 100%;
+      height: 340px;
+      background: linear-gradient(135deg, var(--primary-light), var(--primary));
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 1.1rem;
+    }
+
+    /* ============================================================
+       BENEFITS
+    ============================================================ */
+    .benefits {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 48px;
+    }
+    .section-title span { color: var(--accent); }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 768px) { .benefits-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 641px) and (max-width: 960px) { .benefits-grid { grid-template-columns: 1fr 1fr; } }
+    .benefit-card {
+      background: var(--bg-light);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      transition: var(--transition);
+    }
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .benefit-icon { font-size: 2rem; margin-bottom: 12px; }
+    .benefit-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px; }
+    .benefit-card p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ============================================================
+       PACKAGES
+    ============================================================ */
+    .packages {
+      background: var(--bg-light);
+      padding: 80px 0;
+    }
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .packages-grid { grid-template-columns: 1fr; } }
+    .package-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid transparent;
+      transition: var(--transition);
+    }
+    .package-card:hover, .package-card.featured {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .package-card.featured { position: relative; }
+    .package-badge {
+      position: absolute;
+      top: -14px;
+      right: 50%;
+      transform: translateX(50%);
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 16px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .package-label { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }
+    .package-name { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 6px; }
+    .package-price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent-dark);
+      margin-bottom: 20px;
+    }
+    .package-price span { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
+    .package-items { margin-bottom: 24px; }
+    .package-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+    .package-item::before { content: '✓'; color: var(--accent); font-weight: 800; flex-shrink: 0; }
+    .btn-package {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: var(--primary);
+      color: var(--white);
+      padding: 13px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.98rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+    }
+    .btn-package:hover { background: var(--accent); color: var(--primary-dark); }
+    .package-card.featured .btn-package { background: var(--accent); color: var(--primary-dark); }
+    .package-card.featured .btn-package:hover { background: var(--accent-light); }
+    .packages-note {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       TESTIMONIALS
+    ============================================================ */
+    .testimonials {
+      background: var(--bg-dark);
+      padding: 80px 0;
+    }
+    .testimonials .section-title { color: var(--white); }
+    .testimonials .section-title span { color: var(--accent-light); }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 641px) and (max-width: 960px) { .testimonials-grid { grid-template-columns: 1fr 1fr; } }
+    .testimonial-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-md);
+      padding: 26px 22px;
+      transition: var(--transition);
+    }
+    .testimonial-card:hover { background: rgba(255,255,255,0.11); transform: translateY(-4px); }
+    .testimonial-stars { color: var(--accent); font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
+    .testimonial-text {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.68;
+      margin-bottom: 16px;
+    }
+    .testimonial-author { font-size: 0.88rem; font-weight: 700; color: var(--accent-light); }
+
+    /* ============================================================
+       HOW IT WORKS
+    ============================================================ */
+    .how-it-works {
+      background: var(--white);
+      padding: 80px 0;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+    @media (max-width: 640px) { .steps-grid { grid-template-columns: 1fr; } }
+    .step-card {
+      text-align: center;
+      padding: 32px 20px;
+    }
+    .step-num {
+      width: 56px;
+      height: 56px;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 1.4rem;
+      font-weight: 900;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .step-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 10px; }
+    .step-card p { font-size: 0.93rem; color: var(--text-muted); }
+
+    /* ============================================================
+       FORM
+    ============================================================ */
+    .form-section {
+      background: var(--primary-dark);
+      padding: 80px 0;
+    }
+    .form-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .form-wrap { grid-template-columns: 1fr; gap: 36px; } }
+    .form-pitch h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .form-pitch p { color: rgba(255,255,255,0.75); font-size: 0.98rem; margin-bottom: 22px; }
+    .form-bullets { display: flex; flex-direction: column; gap: 10px; }
+    .form-bullet { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.78); font-size: 0.93rem; }
+    .form-bullet::before { content: '✓'; color: var(--accent); font-weight: 800; flex-shrink: 0; }
+
+    .form-box {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      box-shadow: var(--shadow-lg);
+    }
+    .form-box h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 22px; text-align: center; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 6px; }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 13px 16px;
+      border: 2px solid #d8e6f0;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-family: 'Heebo', Arial, sans-serif;
+      color: var(--text-main);
+      background: #fff;
+      transition: border-color 0.25s;
+      direction: rtl;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary-light);
+    }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 15px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 8px;
+    }
+    .btn-submit:hover { background: var(--accent-light); transform: translateY(-2px); }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .form-disclaimer {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+    .form-success h3 { color: var(--primary); font-size: 1.2rem; margin-bottom: 8px; }
+    .form-success p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* ============================================================
+       FAQ
+    ============================================================ */
+    .faq {
+      background: var(--bg-light);
+      padding: 80px 0;
+    }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      text-align: right;
+      font-family: 'Heebo', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-q:hover { color: var(--primary-light); }
+    .faq-icon {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--accent);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-a-inner {
+      padding: 0 24px 20px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: var(--primary-dark);
+      padding: 32px 0;
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      text-align: center;
+    }
+    .footer-logo { color: var(--white); font-size: 1.1rem; font-weight: 700; }
+    .footer-contact { color: var(--accent-light); font-size: 0.95rem; font-weight: 600; }
+    .footer-social { display: flex; gap: 14px; }
+    .footer-social a { color: rgba(255,255,255,0.6); font-size: 0.88rem; transition: color 0.25s; }
+    .footer-social a:hover { color: var(--accent-light); }
+    .footer-legal { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: center; }
+    .footer-legal a { color: rgba(255,255,255,0.5); font-size: 0.82rem; transition: color 0.25s; }
+    .footer-legal a:hover { color: var(--white); }
+    .footer-sep { color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+    .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+
+    /* ============================================================
+       WHATSAPP FLOAT
+    ============================================================ */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 999;
+      background: #25d366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.45);
+      animation: waBounce 3s ease-in-out 3s infinite;
+      transition: transform 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 28px; height: 28px; fill: white; }
+    @keyframes waBounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-6px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="header">
+    <div class="header-logo">
+      <!-- אם יש לוגו PNG: <img src="URL_LOGO" alt="סימונה השכרת יאכטות" /> -->
+      <span class="header-logo-text">⛵ סימונה</span>
+    </div>
+    <div class="header-right">
+      <a class="header-phone" href="tel:0526284442">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        052-628-4442
+      </a>
+      <a class="btn-header" href="#lead-form">שריינו תאריך ←</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-badge">⭐ מרינה הרצליה &nbsp;·&nbsp; 25 שנה בים &nbsp;·&nbsp; 4.9 מ-341 ביקורות</div>
+        <h1>הגיע הזמן לעשות משהו שיזכרו</h1>
+        <p class="hero-sub">הפלגה פרטית על יאכטה סימונה — לכל אירוע, לכל קבוצה.<br/>אתם מגיעים, אנחנו דואגים לכל השאר.</p>
+        <a href="#lead-form" class="btn-hero">שריינו תאריך ←</a>
+        <div class="hero-trust">
+          <span class="hero-trust-item">מחירים מ-690 ₪ — שקופים ובלי הפתעות</span>
+          <span class="hero-trust-item">341 לקוחות ממליצים בגוגל</span>
+          <span class="hero-trust-item">ביטול / שינוי תאריך ללא עלות</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OCCASION BAR
+  ============================================================ -->
+  <section class="occasion-bar animate-on-scroll">
+    <div class="container">
+      <h2>לאיזה אירוע אתם מחפשים הפלגה?</h2>
+      <div class="occasion-grid">
+        <div class="occasion-card" onclick="selectOccasion('שייט רומנטי')">
+          <span class="occasion-icon">💑</span>
+          <span class="occasion-label">שייט רומנטי</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('יום הולדת')">
+          <span class="occasion-icon">🎂</span>
+          <span class="occasion-label">יום הולדת</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('הצעת נישואין')">
+          <span class="occasion-icon">💍</span>
+          <span class="occasion-label">הצעת נישואין</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('מסיבת רווקות')">
+          <span class="occasion-icon">🥂</span>
+          <span class="occasion-label">מסיבת רווקות</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('מסיבת רווקים')">
+          <span class="occasion-icon">🎉</span>
+          <span class="occasion-label">מסיבת רווקים</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('שייט משפחתי')">
+          <span class="occasion-icon">👨‍👩‍👧</span>
+          <span class="occasion-label">שייט משפחתי</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('יום גיבוש')">
+          <span class="occasion-icon">🏢</span>
+          <span class="occasion-label">יום גיבוש</span>
+        </div>
+        <div class="occasion-card" onclick="selectOccasion('סתם כיף בים')">
+          <span class="occasion-icon">🌊</span>
+          <span class="occasion-label">סתם כיף בים</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOCIAL PROOF STRIP
+  ============================================================ -->
+  <div class="proof-strip animate-on-scroll">
+    <div class="container">
+      <div class="proof-strip-inner">
+        <div class="proof-strip-item">
+          <span class="proof-strip-num" data-target="341">0</span>+ ביקורות גוגל
+        </div>
+        <div class="proof-strip-item">
+          ⭐ <span class="proof-strip-num">4.9</span> ציון ממוצע
+        </div>
+        <div class="proof-strip-item">
+          <span class="proof-strip-num" data-target="25">0</span> שנות פעילות
+        </div>
+        <div class="proof-strip-item">
+          מ-<span class="proof-strip-num" data-target="690">0</span> ₪ להפלגה
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PAIN BANNER
+  ============================================================ -->
+  <div class="pain-banner animate-on-scroll">
+    <div class="container">
+      <div class="pain-banner-inner">
+        <div class="pain-banner-dot"></div>
+        <p>"כמה זמן כבר אתם מחפשים משהו שהוא לא עוד מסעדה?"</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PAIN CARDS
+  ============================================================ -->
+  <section class="pain-section">
+    <div class="container">
+      <div class="pain-grid">
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-num">01</div>
+          <h3>שוב אותו רעיון</h3>
+          <p>מסעדה, ספא, בוטיק. כולם יפים — אבל כולם כבר היו. אתם רוצים שהפעם יהיה משהו שמדברים עליו שבועות אחרי.</p>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-num">02</div>
+          <h3>"זה נראה מורכב לארגן"</h3>
+          <p>הזמנה, לוגיסטיקה, מה אם מישהו מבחיל, מה עם מזג האוויר. יש הרגשה שצריך לתכנן חצי שנה קדימה.</p>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-num">03</div>
+          <h3>"זה בטח יקר לי"</h3>
+          <p>כשאומרים יאכטה — המח קופץ לסכומים שהם לא בשבילנו. אז לא בודקים, לא שואלים, ומחמיצים.</p>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-num">04</div>
+          <h3>"מה אם זה לא כמו שדמיינתי?"</h3>
+          <p>הצילומים של כולם נראים מושלמים. אבל מה עם הסירה האמיתית? הסקיפר? האוכל? אתם לא רוצים הפתעות לא נעימות.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOLUTION
+  ============================================================ -->
+  <section class="solution">
+    <div class="container">
+      <div class="solution-inner">
+        <div class="animate-on-scroll">
+          <h2>סימונה דואגת לכל הפרטים —<br/><span>אתם רק מגיעים</span></h2>
+          <p>יש הרבה יאכטות בהרצליה. ההבדל הוא בחוויה מרגע שאתם שולחים הודעה ועד הרגע שאתם יורדים מהסיפון. סימונה בונה כל הפלגה אישית — מהקישוטים ועד הסקיפר — כדי שתרגישו שמישהו באמת חשב עליכם.</p>
+          <p>25 שנה של הפלגות לימדו דבר אחד: הרגעים שאנשים זוכרים הם לא ה"יאכטה הגדולה" או ה"נוף היפה". הם הרגעים שבהם כיבו את הטלפון, הסתכלו אחד על השני, ואמרו — איזה כיף שעשינו את זה.</p>
+          <a href="#lead-form" class="btn-hero" style="margin-top:16px; display:inline-block; animation:none;">שריינו תאריך ←</a>
+        </div>
+        <div class="animate-on-scroll">
+          <div class="solution-img-placeholder">
+            <!-- אם יש תמונה: <img src="URL_IMAGE" alt="הפלגה רומנטית על יאכטה סימונה" /> -->
+            🌅 תמונת יאכטה + לקוחות שמחים
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BENEFITS
+  ============================================================ -->
+  <section class="benefits">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">למה <span>סימונה?</span></h2>
+      <div class="benefits-grid">
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🔒</div>
+          <h3>פרטי לגמרי</h3>
+          <p>היאכטה כולה רק שלכם — אין זרים, אין שיתוף, אין פשרות.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">📱</div>
+          <h3>ים = אין קליטה</h3>
+          <p>שעה-שעתיים של אנשים אמיתיים בלי סלולרי. זה לא בונוס — זה הנקודה.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🎀</div>
+          <h3>קישוט לפי האירוע</h3>
+          <p>בלונים, שלטים, פרחים — הכל מוכן לפני שאתם עולים.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🍷</div>
+          <h3>שתיה ופינוקים כלולים</h3>
+          <p>יין, שוקולדים, שתיה קרה וחמה — ללא תשלום נוסף.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🌊</div>
+          <h3>קפיצה למים באמצע הים</h3>
+          <p>כשהים שקט — עוצרים, פורשים גלגלים, וקופצים. חוויה שאין ביבשה.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">📸</div>
+          <h3>תמונות שלא ישכחו</h3>
+          <p>הסקיפר יצלם אתכם. השקיעה, הים, הרגעים. תמונות שישארו.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PACKAGES
+  ============================================================ -->
+  <section class="packages">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">בחרו את <span>החבילה שמתאימה לכם</span></h2>
+      <div class="packages-grid">
+
+        <div class="package-card animate-on-scroll">
+          <div class="package-label">🌊 בסיסית</div>
+          <div class="package-name">הפלגה קלאסית</div>
+          <div class="package-price">מ-690 ₪ <span>לזוג</span></div>
+          <div class="package-items">
+            <div class="package-item">שעה-שעתיים שייט</div>
+            <div class="package-item">יין + שוקולדים</div>
+            <div class="package-item">קישוט יאכטה לאירוע</div>
+            <div class="package-item">אפשרות שחייה בים</div>
+            <div class="package-item">סקיפר מקצועי</div>
+          </div>
+          <button class="btn-package" onclick="selectPackage('בסיסית')">שריינו תאריך ←</button>
+        </div>
+
+        <div class="package-card featured animate-on-scroll">
+          <div class="package-badge">הכי פופולרי ⭐</div>
+          <div class="package-label">⭐ כסף</div>
+          <div class="package-name">הפלגה מפנקת</div>
+          <div class="package-price">מ-890 ₪ <span>לזוג</span></div>
+          <div class="package-items">
+            <div class="package-item">כל מה שבבסיסית</div>
+            <div class="package-item">ארוחה (בוקר / ערב / דגים)</div>
+            <div class="package-item">חדר VIP בתיאום מראש</div>
+            <div class="package-item">שתיה חמה + קרה חופשית</div>
+          </div>
+          <button class="btn-package" onclick="selectPackage('כסף')">שריינו תאריך ←</button>
+        </div>
+
+        <div class="package-card animate-on-scroll">
+          <div class="package-label">👑 זהב</div>
+          <div class="package-name">החוויה המלאה</div>
+          <div class="package-price">מ-1,290 ₪ <span>לזוג</span></div>
+          <div class="package-items">
+            <div class="package-item">כל מה שבכסף</div>
+            <div class="package-item">עיסוי זוגי מפנק</div>
+            <div class="package-item">הפלגת שקיעה</div>
+            <div class="package-item">ארוחת ערב לאור נרות</div>
+            <div class="package-item">חדר VIP מרווח</div>
+          </div>
+          <button class="btn-package" onclick="selectPackage('זהב')">שריינו תאריך ←</button>
+        </div>
+
+      </div>
+      <p class="packages-note animate-on-scroll">לא בטוחים? שלחו פרטים ונבנה לכם חבילה מותאמת אישית 🙏</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">מה אומרים <span>הלקוחות שלנו</span></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"הכל היה מושקע ויפה מעל המצופה. הצוות קשוב וקורא את הסיטואציה. הגשימו חלום."</p>
+          <div class="testimonial-author">— שמעון שץ</div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"לקחתי חבילת VIP — מושלם מעל המצופה. הסקיפר שירותי, האוכל מדויק, המסאז' ברמה מקצועית. אם בא לכם לפנק מישהו — זו ההמלצה."</p>
+          <div class="testimonial-author">— שחר אבוחצרה</div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"עשיתי לבעלי הפתעה ליום הולדת — חבילת זהב. אלכס הסקיפר ורונית המעסה היו מהממים. סימונה דאגה לכל מהכל. אין עליכם!"</p>
+          <div class="testimonial-author">— לורן בליסובסקי</div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"איזו חוויה מטריפה למשפחה! עם ארבעת ילדינו, יפית הסקיפרית פשוט מהממת. ממליצה בחום!"</p>
+          <div class="testimonial-author">— ריעות רובננקו</div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"אחד שפוחד מהים — הגישה של אבי גרמה לי תחושת ביטחון ולהתאהב בים. היה תענוג להפליג עם סקיפר כזה."</p>
+          <div class="testimonial-author">— מואנס מסארוה</div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"היינו בשייט זוגי והיה פשוט מושלם! סימונה מקסימה ולבבית, דאגה לכל פרט. עצרנו לקפיצות במים, נהנינו מכל רגע. ממליצים בחום גדול!"</p>
+          <div class="testimonial-author">— יובל שמיס</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+  ============================================================ -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">איך זה <span>עובד?</span></h2>
+      <div class="steps-grid">
+        <div class="step-card animate-on-scroll">
+          <div class="step-num">1</div>
+          <h3>שולחים פרטים — 2 דקות</h3>
+          <p>ממלאים שם, טלפון וסוג האירוע. זה הכל.</p>
+        </div>
+        <div class="step-card animate-on-scroll">
+          <div class="step-num">2</div>
+          <h3>סימונה חוזרת תוך שעה</h3>
+          <p>תיאום תאריך, שעה, חבילה וכל פרט אישי — בשיחת WhatsApp אחת.</p>
+        </div>
+        <div class="step-card animate-on-scroll">
+          <div class="step-num">3</div>
+          <h3>אתם מגיעים ונהנים</h3>
+          <p>מגיעים למרינה הרצליה. כל השאר כבר מוכן.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FORM
+  ============================================================ -->
+  <section class="form-section" id="lead-form">
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-pitch animate-on-scroll">
+          <h2>שריינו תאריך —<br/>סימונה תחזור אליכם תוך שעה</h2>
+          <p>ממלאים שם וטלפון. בשיחה קצרה נתאם תאריך, שעה וכל פרט — בלי התחייבות ובלי תשלום מראש.</p>
+          <div class="form-bullets">
+            <span class="form-bullet">ללא עלות וללא התחייבות</span>
+            <span class="form-bullet">סימונה חוזרת תוך שעה בשעות פעילות</span>
+            <span class="form-bullet">הפרטים שלכם מאובטחים</span>
+          </div>
+        </div>
+
+        <div class="form-box animate-on-scroll">
+          <h3>השאירו פרטים ואנחנו נחזור 🙏</h3>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="name">שם מלא *</label>
+              <input type="text" id="name" name="name" placeholder="שם מלא" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">טלפון *</label>
+              <input type="tel" id="phone" name="phone" placeholder="05X-XXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label for="occasion">לאיזה אירוע?</label>
+              <select id="occasion" name="occasion">
+                <option value="">— בחרו סוג אירוע —</option>
+                <option value="שייט רומנטי">💑 שייט רומנטי</option>
+                <option value="יום הולדת">🎂 יום הולדת</option>
+                <option value="הצעת נישואין">💍 הצעת נישואין</option>
+                <option value="מסיבת רווקות">🥂 מסיבת רווקות</option>
+                <option value="מסיבת רווקים">🎉 מסיבת רווקים</option>
+                <option value="שייט משפחתי">👨‍👩‍👧 שייט משפחתי</option>
+                <option value="יום גיבוש">🏢 יום גיבוש</option>
+                <option value="סתם כיף בים">🌊 סתם כיף בים</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">שלחו ואשריינו ←</button>
+            <p class="form-disclaimer">הפרטים שלכם מאובטחים ולא יועברו לצד שלישי</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <h3>✅ קיבלנו! תודה רבה</h3>
+            <p>סימונה תחזור אליכם תוך שעה בשעות פעילות.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">שאלות <span>נפוצות</span></h2>
+      <div class="faq-list">
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            כמה זה עולה?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">מחירים מ-690 ₪ לזוג לשעה. כל החבילות — עם כל מה שכלול — מפורטות בדף. אין תוספות מפתיעות.</div>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            מה אם מזג האוויר גרוע?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">אם הים לא מאפשר הפלגה — נעביר לתאריך אחר ללא עלות. פשוט ומראש.</div>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            אנחנו לא מכירים ים בכלל — זה בסדר?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">לגמרי. הסקיפר שלנו מלווה אתכם מרגע העלייה ועד הירידה. לא צריך ניסיון, ידע, או כלום — רק להגיע.</div>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            כמה אנשים יכולים לעלות?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">תלוי בחבילה — בין 2 ל-13 איש. ספרו לנו כמה אתם ונציע לכם את הפתרון המתאים.</div>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            כמה מראש צריך להזמין?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">ממליצים שבוע קדימה לפחות, במיוחד בסופי שבוע ובקיץ. לפעמים אפשר גם ביום-יומיים — פנו ונבדוק.</div>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-q" aria-expanded="false">
+            מה כלול בחבילה — יש הפתעות בתשלום?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a" role="region">
+            <div class="faq-a-inner">לא. כל מה שכלול בחבילה כתוב מראש. אין "תוספות חובה" בסוף. מה שסגרתם — זה מה שאתם משלמים.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">⛵ סימונה השכרת יאכטות</div>
+        <a class="footer-contact" href="tel:0526284442">052-628-4442</a>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/seamona.co.il/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/seamona.co.il/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="footer-legal">
+          <a href="https://www.seamona.co.il/תנאי-שימוש/" target="_blank" rel="noopener">תנאי שימוש</a>
+          <span class="footer-sep">|</span>
+          <a href="https://www.seamona.co.il/מדיניות-פרטיות/" target="_blank" rel="noopener">מדיניות פרטיות</a>
+          <span class="footer-sep">|</span>
+          <a href="https://www.seamona.co.il/הצהרת-נגישות/" target="_blank" rel="noopener">הצהרת נגישות</a>
+        </div>
+        <span class="footer-copy">© 2026 סימונה השכרת יאכטות. כל הזכויות שמורות.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       WHATSAPP FLOAT
+  ============================================================ -->
+  <a class="wa-float" href="https://wa.me/972526284442?text=היי, אשמח לבדוק עם סימונה פרטים לגבי אירוע על יאכטה" target="_blank" rel="noopener" aria-label="שלחו הודעה ב-WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script>
+    // ── TRACKING PARAMS ──────────────────────────────────────────
+    function captureTrackingParams() {
+      const p = new URLSearchParams(window.location.search);
+      return {
+        utm_source:   p.get('utm_source')   || '',
+        utm_medium:   p.get('utm_medium')   || '',
+        utm_campaign: p.get('utm_campaign') || '',
+        utm_content:  p.get('utm_content')  || '',
+        utm_term:     p.get('utm_term')     || '',
+        fbclid:       p.get('fbclid')       || '',
+        gclid:        p.get('gclid')        || '',
+        ttclid:       p.get('ttclid')       || '',
+        page_url:     window.location.href,
+        user_agent:   navigator.userAgent
+      };
+    }
+    const _tracking = captureTrackingParams();
+
+    // ── OCCASION BAR → PRE-SELECT FORM ──────────────────────────
+    function selectOccasion(val) {
+      document.getElementById('occasion').value = val;
+      document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // ── PACKAGE → PRE-SELECT + SCROLL ───────────────────────────
+    function selectPackage(pkg) {
+      document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // ── FORM SUBMIT ──────────────────────────────────────────────
+    const WEBHOOK_URL = 'WEBHOOK_URL_PLACEHOLDER'; // ← הכנס Webhook URL
+
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'שולח...';
+
+      const payload = {
+        name:     document.getElementById('name').value.trim(),
+        phone:    document.getElementById('phone').value.trim(),
+        occasion: document.getElementById('occasion').value,
+        source:   'seamona-lp',
+        ..._tracking
+      };
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        });
+      } catch(err) {
+        console.warn('Webhook error (non-blocking):', err);
+      }
+
+      // Fire Meta Pixel Lead
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', { content_name: 'seamona-lp' });
+      }
+
+      // Redirect to thank you
+      const params = new URLSearchParams({
+        name:     payload.name,
+        occasion: payload.occasion,
+        source:   'index'
+      });
+      window.location.href = 'thankyou.html?' + params.toString();
+    });
+
+    // ── SCROLL ANIMATIONS ────────────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // ── COUNTER ANIMATIONS ───────────────────────────────────────
+    function animateCounter(el, target, duration = 1800) {
+      let start = 0;
+      const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target).toLocaleString('he-IL');
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.dataset.target);
+          if (target) animateCounter(entry.target, target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+
+    // ── FAQ ACCORDION ────────────────────────────────────────────
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-a').style.maxHeight = null;
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+
+        // Open clicked (if was closed)
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-a').style.maxHeight = item.querySelector('.faq-a-inner').scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Open first FAQ by default
+    const firstFaq = document.querySelector('.faq-item');
+    if (firstFaq) {
+      firstFaq.classList.add('open');
+      firstFaq.querySelector('.faq-a').style.maxHeight = firstFaq.querySelector('.faq-a-inner').scrollHeight + 'px';
+      firstFaq.querySelector('.faq-q').setAttribute('aria-expanded', 'true');
+    }
+  </script>
+
+</body>
+</html>

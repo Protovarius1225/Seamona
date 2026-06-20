@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>תודה! סימונה תחזור אליכם בקרוב</title>
+
+  <!-- Meta Pixel — Lead Event -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_PLACEHOLDER');
+    fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_PLACEHOLDER&ev=Lead&noscript=1" /></noscript>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary:        #0a3d62;
+      --primary-light:  #1a6ea8;
+      --primary-dark:   #062a45;
+      --accent:         #f0a500;
+      --accent-light:   #f7c240;
+      --accent-dark:    #c47f00;
+      --bg-light:       #f8fafd;
+      --bg-dark:        #061e33;
+      --text-main:      #0d1b2a;
+      --text-muted:     #5a7184;
+      --white:          #ffffff;
+      --radius-sm:      8px;
+      --radius-md:      14px;
+      --radius-lg:      22px;
+      --shadow-sm:      0 2px 12px rgba(10,61,98,0.08);
+      --shadow-md:      0 6px 28px rgba(10,61,98,0.14);
+      --shadow-lg:      0 12px 48px rgba(10,61,98,0.20);
+      --transition:     0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Heebo', Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-main);
+      background: var(--white);
+      direction: rtl;
+      text-align: right;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(720px, 92%);
+      margin: 0 auto;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--primary-dark);
+      padding: 0 24px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-logo-text {
+      color: var(--white);
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--primary-dark) 0%, var(--primary) 100%);
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+    .hero-check {
+      width: 72px;
+      height: 72px;
+      background: rgba(240,165,0,0.15);
+      border: 2.5px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 22px;
+      font-size: 2rem;
+      animation: checkPop 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    @keyframes checkPop {
+      from { transform: scale(0); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(240,165,0,0.18);
+      border: 1.5px solid var(--accent);
+      color: var(--accent-light);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 16px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .hero h1 .lead-name { color: var(--accent-light); }
+    .hero-sub {
+      color: rgba(255,255,255,0.78);
+      font-size: 1rem;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .next-steps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 28px;
+    }
+    .next-step {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .next-step-icon { font-size: 1rem; }
+
+    /* ── QUIZ SECTION ── */
+    .quiz-section {
+      background: var(--white);
+      padding: 56px 24px 64px;
+    }
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .quiz-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .quiz-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Progress Bar */
+    .quiz-progress {
+      margin-bottom: 32px;
+    }
+    .quiz-progress-track {
+      height: 6px;
+      background: #e2eef7;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 50px;
+      transition: width 0.4s ease;
+    }
+    .quiz-progress-label {
+      text-align: left;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Quiz Steps */
+    .quiz-step {
+      display: none;
+    }
+    .quiz-step.active {
+      display: block;
+      animation: fadeSlideIn 0.35s ease forwards;
+    }
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .quiz-q-label {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .quiz-option {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-light);
+      border: 2px solid transparent;
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      transition: var(--transition);
+      width: 100%;
+      text-align: right;
+      font-family: 'Heebo', Arial, sans-serif;
+    }
+    .quiz-option:hover {
+      border-color: var(--accent);
+      background: #fff8e6;
+    }
+    .quiz-option.selected {
+      border-color: var(--accent);
+      background: #fff3cc;
+      color: var(--primary-dark);
+    }
+    .quiz-option-icon { font-size: 1.3rem; }
+
+    .quiz-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 20px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      cursor: pointer;
+      font-family: 'Heebo', Arial, sans-serif;
+      padding: 0;
+    }
+    .quiz-back:hover { color: var(--primary); }
+
+    /* Done State */
+    .quiz-done {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+      animation: fadeSlideIn 0.4s ease forwards;
+    }
+    .quiz-done-icon {
+      font-size: 3.2rem;
+      margin-bottom: 16px;
+    }
+    .quiz-done h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+    .quiz-done p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 28px;
+    }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: white;
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      box-shadow: 0 4px 18px rgba(37,211,102,0.35);
+    }
+    .btn-wa:hover { background: #1ebe5a; transform: translateY(-2px); }
+    .btn-wa svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+
+    /* ── MINI FAQ ── */
+    .mini-faq {
+      background: var(--bg-light);
+      padding: 56px 24px;
+    }
+    .mini-faq h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 18px 20px;
+      text-align: right;
+      font-family: 'Heebo', Arial, sans-serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-icon { color: var(--accent); font-size: 1rem; transition: transform 0.3s; flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-a-inner { padding: 0 20px 18px; font-size: 0.93rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--primary-dark);
+      padding: 32px 0;
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      text-align: center;
+    }
+    .footer-logo { color: var(--white); font-size: 1.1rem; font-weight: 700; }
+    .footer-contact { color: var(--accent-light); font-size: 0.95rem; font-weight: 600; }
+    .footer-social { display: flex; gap: 14px; }
+    .footer-social a { color: rgba(255,255,255,0.6); font-size: 0.88rem; transition: color 0.25s; }
+    .footer-social a:hover { color: var(--accent-light); }
+    .footer-legal { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: center; }
+    .footer-legal a { color: rgba(255,255,255,0.5); font-size: 0.82rem; transition: color 0.25s; }
+    .footer-legal a:hover { color: var(--white); }
+    .footer-sep { color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+    .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <span class="header-logo-text">⛵ סימונה</span>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-check">✅</div>
+      <div class="hero-badge">הפרטים התקבלו!</div>
+      <h1>תודה<span class="lead-name" id="heroName"></span>!<br/>סימונה תחזור אליכם תוך שעה</h1>
+      <p class="hero-sub">בינתיים — ספרו לנו עוד קצת כדי שנוכל להכין לכם בדיוק מה שצריך</p>
+      <div class="next-steps">
+        <span class="next-step"><span class="next-step-icon">📩</span> קיבלנו את הפרטים</span>
+        <span class="next-step"><span class="next-step-icon">📞</span> סימונה חוזרת תוך שעה</span>
+        <span class="next-step"><span class="next-step-icon">⛵</span> נתאם תאריך וחבילה יחד</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── QUIZ ── -->
+  <section class="quiz-section">
+    <div class="container">
+
+      <div class="quiz-header" id="quizHeader">
+        <h2>3 שאלות קצרות שיעזרו לנו</h2>
+        <p>לוקח דקה. עוזר לסימונה להגיע לשיחה מוכנה עבורכם.</p>
+      </div>
+
+      <!-- Progress -->
+      <div class="quiz-progress" id="quizProgress">
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <div class="quiz-progress-label" id="progressLabel">שאלה 1 מתוך 3</div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="quiz-step active" id="step1">
+        <span class="quiz-q-label">לכמה אנשים ההפלגה?</span>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(1, '1-2 (זוג / הפתעה)')">
+            <span class="quiz-option-icon">💑</span> 1-2 (זוג / הפתעה)
+          </button>
+          <button class="quiz-option" onclick="answer(1, '3-6 (קבוצה קטנה)')">
+            <span class="quiz-option-icon">👥</span> 3-6 (קבוצה קטנה)
+          </button>
+          <button class="quiz-option" onclick="answer(1, '7-13 (קבוצה גדולה)')">
+            <span class="quiz-option-icon">🎉</span> 7-13 (קבוצה גדולה)
+          </button>
+          <button class="quiz-option" onclick="answer(1, 'עוד לא בטוח')">
+            <span class="quiz-option-icon">🤷</span> עוד לא בטוח
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="quiz-step" id="step2">
+        <span class="quiz-q-label">יש לכם תאריך בראש?</span>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(2, 'כן — תאריך ספציפי')">
+            <span class="quiz-option-icon">📅</span> כן — תאריך ספציפי
+          </button>
+          <button class="quiz-option" onclick="answer(2, 'גמיש — תוך שבועיים')">
+            <span class="quiz-option-icon">🗓️</span> גמיש — תוך שבועיים
+          </button>
+          <button class="quiz-option" onclick="answer(2, 'גמיש — תוך חודש')">
+            <span class="quiz-option-icon">📆</span> גמיש — תוך חודש
+          </button>
+          <button class="quiz-option" onclick="answer(2, 'עוד לא החלטנו')">
+            <span class="quiz-option-icon">⏳</span> עוד לא החלטנו
+          </button>
+        </div>
+        <button class="quiz-back" onclick="goBack(2)">← חזרה</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="quiz-step" id="step3">
+        <span class="quiz-q-label">מה הכי חשוב לכם בהפלגה?</span>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="answer(3, 'אווירה וקישוטים לאירוע')">
+            <span class="quiz-option-icon">🎀</span> אווירה וקישוטים לאירוע
+          </button>
+          <button class="quiz-option" onclick="answer(3, 'אוכל ושתיה טובים')">
+            <span class="quiz-option-icon">🍷</span> אוכל ושתיה טובים
+          </button>
+          <button class="quiz-option" onclick="answer(3, 'פרטיות מוחלטת')">
+            <span class="quiz-option-icon">🔒</span> פרטיות מוחלטת
+          </button>
+          <button class="quiz-option" onclick="answer(3, 'גמישות במחיר ובזמן')">
+            <span class="quiz-option-icon">💸</span> גמישות במחיר ובזמן
+          </button>
+        </div>
+        <button class="quiz-back" onclick="goBack(3)">← חזרה</button>
+      </div>
+
+      <!-- Done State -->
+      <div class="quiz-done" id="quizDone">
+        <div class="quiz-done-icon">🎉</div>
+        <h2>מצוין, תודה!</h2>
+        <p>קיבלנו את כל הפרטים. סימונה תחזור אליכם תוך שעה עם הצעה מותאמת.<br/>רוצים לדבר עכשיו?</p>
+        <a class="btn-wa" href="https://wa.me/972526284442?text=היי סימונה, מילאתי פרטים באתר ואשמח לתאם הפלגה!" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          שלחו הודעה ב-WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── MINI FAQ ── -->
+  <section class="mini-faq">
+    <div class="container">
+      <h2>שאלות קצרות</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            מתי בדיוק תחזרו אלי?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">תוך שעה בשעות פעילות (א'-ו', 8:00-20:00). אם פנית בערב מאוחר — בבוקר שלמחרת.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            האם צריך להכין משהו לשיחה?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">לא. רק תחשבו מה סוג האירוע, כמה אנשים, ואיזה תאריך מתאים בערך. סימונה תמלא את השאר.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            למה שאלתם אותי שאלות נוספות?
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">כדי שסימונה תגיע לשיחה מוכנה עם הצעה שמתאימה לכם — לא הצעה גנרית. זה חוסך זמן לשנינו.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">⛵ סימונה השכרת יאכטות</div>
+        <a class="footer-contact" href="tel:0526284442">052-628-4442</a>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/seamona.co.il/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/seamona.co.il/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="footer-legal">
+          <a href="https://www.seamona.co.il/תנאי-שימוש/" target="_blank" rel="noopener">תנאי שימוש</a>
+          <span class="footer-sep">|</span>
+          <a href="https://www.seamona.co.il/מדיניות-פרטיות/" target="_blank" rel="noopener">מדיניות פרטיות</a>
+          <span class="footer-sep">|</span>
+          <a href="https://www.seamona.co.il/הצהרת-נגישות/" target="_blank" rel="noopener">הצהרת נגישות</a>
+        </div>
+        <span class="footer-copy">© 2026 סימונה השכרת יאכטות. כל הזכויות שמורות.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ── -->
+  <script>
+    const WEBHOOK_URL = 'WEBHOOK_URL_PLACEHOLDER'; // ← אותו Webhook URL כמו ב-index.html
+
+    // ── READ URL PARAMS ──────────────────────────────────────────
+    function getURLParams() {
+      const p = new URLSearchParams(window.location.search);
+      return {
+        name:         p.get('name')         || '',
+        occasion:     p.get('occasion')     || '',
+        utm_source:   p.get('utm_source')   || '',
+        utm_medium:   p.get('utm_medium')   || '',
+        utm_campaign: p.get('utm_campaign') || '',
+        utm_content:  p.get('utm_content')  || '',
+        utm_term:     p.get('utm_term')     || '',
+        fbclid:       p.get('fbclid')       || '',
+        gclid:        p.get('gclid')        || '',
+        ttclid:       p.get('ttclid')       || '',
+      };
+    }
+    const _lead = getURLParams();
+
+    // ── PERSONALIZE HERO ────────────────────────────────────────
+    (function() {
+      const nameEl = document.getElementById('heroName');
+      if (nameEl && _lead.name) {
+        const firstName = _lead.name.trim().split(' ')[0];
+        nameEl.textContent = ' ' + firstName;
+      }
+    })();
+
+    // ── QUIZ STATE ───────────────────────────────────────────────
+    const totalSteps = 3;
+    let currentStep = 1;
+    const answers = {};
+
+    function updateProgress() {
+      const pct = ((currentStep - 1) / totalSteps) * 100;
+      document.getElementById('progressFill').style.width = pct + '%';
+      document.getElementById('progressLabel').textContent = 'שאלה ' + currentStep + ' מתוך ' + totalSteps;
+    }
+
+    function answer(step, val) {
+      answers['q' + step] = val;
+
+      // Visual feedback
+      const opts = document.querySelectorAll('#step' + step + ' .quiz-option');
+      opts.forEach(o => {
+        o.classList.remove('selected');
+        if (o.textContent.trim().includes(val.substring(0, 12))) {
+          o.classList.add('selected');
+        }
+      });
+
+      setTimeout(() => {
+        if (step < totalSteps) {
+          showStep(step + 1);
+        } else {
+          showDone();
+        }
+      }, 300);
+    }
+
+    function showStep(n) {
+      document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+      document.getElementById('step' + n).classList.add('active');
+      currentStep = n;
+      updateProgress();
+    }
+
+    function goBack(from) {
+      showStep(from - 1);
+    }
+
+    function showDone() {
+      document.getElementById('progressFill').style.width = '100%';
+      document.getElementById('progressLabel').textContent = 'הושלם ✓';
+
+      setTimeout(() => {
+        document.getElementById('quizHeader').style.display = 'none';
+        document.getElementById('quizProgress').style.display = 'none';
+        document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+        document.getElementById('quizDone').style.display = 'block';
+        sendQuizWebhook();
+      }, 300);
+    }
+
+    async function sendQuizWebhook() {
+      const payload = {
+        source:   'seamona-thankyou',
+        name:     _lead.name,
+        occasion: _lead.occasion,
+        q1_group_size:    answers.q1 || '',
+        q2_date:          answers.q2 || '',
+        q3_priority:      answers.q3 || '',
+        utm_source:       _lead.utm_source,
+        utm_medium:       _lead.utm_medium,
+        utm_campaign:     _lead.utm_campaign,
+        utm_content:      _lead.utm_content,
+        utm_term:         _lead.utm_term,
+        fbclid:           _lead.fbclid,
+        gclid:            _lead.gclid,
+        ttclid:           _lead.ttclid,
+        page_url:         window.location.href,
+        timestamp:        new Date().toISOString()
+      };
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        });
+      } catch(err) {
+        console.warn('Quiz webhook error (non-blocking):', err);
+      }
+    }
+
+    // Init progress
+    updateProgress();
+
+    // ── FAQ ACCORDION ────────────────────────────────────────────
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-a').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          item.querySelector('.faq-a').style.maxHeight = item.querySelector('.faq-a-inner').scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
